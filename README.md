@@ -59,7 +59,7 @@ by the compiler for the target architecture.
 Source files: 
 - `nbody.gcc-6.c`: [Fastest C benchmark at the time of writing](https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/nbody-gcc-6.html) 
   without hand-coded or non-standard vector instructions.
-- `nbody.gcc-7.c`: Improved version as described above.  This is normally about 
+- `nbody.gcc-x.c`: Improved version as described above.  This is normally about 
   *7% faster* than the baseline version.
 
 Available make targets:
@@ -83,8 +83,8 @@ Individual benchmarks can be checked and run using the `nbody.*.gcc_run`
 executables.  Examples are as follows:
 ```bash
 # Check the improved benchmark output for errors with N = 1000.
-./nbody.gcc-7.gcc_run 1000 > nbody.gcc-7.output.txt
-ndiff -abserr 1.0e-8 nbody-output.txt nbody.gcc-7.output.txt
+./nbody.gcc-x.gcc_run 1000 > nbody.gcc-7.output.txt
+ndiff -abserr 1.0e-8 nbody-output.txt nbody.gcc-x.output.txt
 
 # Time the improved benchmark with N = 50000000.
 time ./nbody.gcc-7.gcc_run 50000000
