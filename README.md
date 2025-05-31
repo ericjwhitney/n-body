@@ -19,7 +19,7 @@ at the time of writing.
 
 ### Speed Improvements
 
-he main speed improvements are: 
+The main speed improvements are: 
   1. I avoid recalculating the inverse square-root of the distance between 
      bodies on each iteration, which means that only a single division 
      operation is required for each iteration of `advance()`. To do this I save 
