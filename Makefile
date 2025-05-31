@@ -1,7 +1,7 @@
 # -- Setup ---------------------------------------------------------------------
 
-# Source files. -6 is the baseline benchmark, and -7 is the improved version.
-SOURCE = nbody.gcc-6.c nbody.gcc-7.c
+# Source files. -6 is the baseline benchmark, and -x is the improved version.
+SOURCE = nbody.gcc-6.c nbody.gcc-x.c
 
 # Number of iterations for checking and benchmarking.
 N_QUICK = 1000
