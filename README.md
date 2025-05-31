@@ -83,9 +83,9 @@ Individual benchmarks can be checked and run using the `nbody.*.gcc_run`
 executables.  Examples are as follows:
 ```bash
 # Check the improved benchmark output for errors with N = 1000.
-./nbody.gcc-x.gcc_run 1000 > nbody.gcc-7.output.txt
+./nbody.gcc-x.gcc_run 1000 > nbody.gcc-x.output.txt
 ndiff -abserr 1.0e-8 nbody-output.txt nbody.gcc-x.output.txt
 
 # Time the improved benchmark with N = 50000000.
-time ./nbody.gcc-7.gcc_run 50000000
+time ./nbody.gcc-x.gcc_run 50000000
 ```
