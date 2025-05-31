@@ -43,7 +43,7 @@ time: $(TARGETS)
 hyperfine: $(TARGETS)
 	@$(foreach target,$(TARGETS),$(call run-hyperfine,$(target)))
 
-.PHONY: all build check clean rebuild time hyperfine
+.PHONY: all build check clean time hyperfine
 
 # -- Functions & Pattern Rules -------------------------------------------------
 
